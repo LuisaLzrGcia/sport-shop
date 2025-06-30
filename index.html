@@ -5,21 +5,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Navbar -->
     <header>
-        <nav>
-            Navbar
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 mt-3 mb-3">
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="logo" width="100">
+                </a>
+
+                <!-- Botón -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú y búsqueda dentro del colapso -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
+                <!-- Menú centrado -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="loNuevo.html">Lo Nuevo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hombre.html">Hombre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mujer.html">Mujer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nino.html">Niño/a</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="ofertas.html">Ofertas</a></li>
+                </ul>
+                </div>
+
+                <!-- Íconos y búsqueda: fuera del colapso -->
+                <form class="d-flex align-items-center">
+                <input class="form-control form-control-sm me-2 d-none d-lg-block" type="search" placeholder="Buscar">
+                <button class="btn btn-light btn-sm me-3 d-none d-lg-block" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+                <a href="iniciarSesion.html" class="text-white me-3"><i class="bi bi-person" style="font-size: 1.2rem;"></i></a>
+                <a href="favoritos.html" class="text-danger me-3"><i class="bi bi-heart" style="font-size: 1.2rem;"></i></a>
+                <a href="carrito.html" class="text-white"><i class="bi bi-bag" style="font-size: 1.2rem;"></i></a>
+                </form>
+
+            </div>
         </nav>
+
+        <div class="bg-primary-subtle text-center py-2 mb-3">
+            <a id="mensaje-ticker" class="text-dark text-decoration-none fw-bold"></a>
+        </div> <br><br>
+
     </header> 
 
     <!-- Contenido principal -->
     <main class="container-fluid">
+        <section class="video-anuncio">
+            <div class="ratio ratio-21x9">
+                <iframe 
+                    src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=xbDozo8IEkI&controls=0&modestbranding=1&showinfo=0&rel=0&disablekb=1"
+                    title="Anuncio ropa deportiva"
+                    allow="autoplay"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h1 class="text-center fw-bold mt-5">No se trata solo de competir, se trata de superarte cada día.</h1>
+            <h2 class="text-center fw-light mb-5">Aqui encuentras la ropa que te impulsa a ir más allá de tus límites.</h2>
+
+            <img src="https://hojassueltasok.wordpress.com/wp-content/uploads/2017/11/ch011014a-brands-page_000.jpg" alt="Imagen marcas" class="d-block mx-auto img-fluid", style="width: 80%; max-width: 800px; height: auto;">
+            
+            <h1 class="text-center fw-bold mt-5">Las mejores marcas del mercado,</h1>
+            <h2 class="text-center fw-light mb-5">al alcance de tu entrenamiento.</h2>
+
+        <section>
+        <section class="container my-5">
+            <div class="row text-center">
+                <!-- Columna 1 -->
+                <div class="col-md-4 mb-4">
+                    <h3 class="text-primary">Nike Mercurial Superfly 10 Elite</h3>
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f566f622-874a-4ecd-9bd1-47f52cbe8c53/ZM+SUPERFLY+10+ELITE+FG+LV8.png" alt="Producto 1" class="img-fluid mb-3 rounded">
+                    <p>¿La velocidad es tu obsesión? También para las mayores estrellas del fútbol. Por eso, creamos estos tacos Elite</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+
+                <!-- Columna 2 -->
+                <div class="col-md-4 mb-4">
+                    <h3 class="text-primary">Paris Saint-Germain Air Max Plus </h3>
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7b642882-b274-4faf-9ace-e2ffd3133913/NIKE+AIR+MAX+PLUS+PRM.png" alt="Producto 2" class="img-fluid mb-3 rounded">
+                    <p>La malla transpirable te ayuda a mantener la frescura, mientras que la amortiguación visible te permite celebrar a tu equipo con comodidad.</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+
+                <!-- Columna 3 -->
+                <div class="col-md-4 mb-4">
+                    <h3 class="text-primary">Nike Free Metcon6</h3>
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/11dd18fc-9ee2-4e3e-85e2-19ff6b51eddf/NIKE+FREE+METCON+6.png" alt="Producto 3" class="img-fluid mb-3 rounded">
+                    <p>Tu entrenamiento tienen un propósito determinado, un enfoque específico...</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        </section>
         <div class="row">
             <!-- Sección lateral (aside opcional) -->
             <aside class="col-xl-2">
@@ -60,6 +155,8 @@
     <footer>
         <p class="mb-0 text-center">&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
