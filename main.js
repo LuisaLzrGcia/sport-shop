@@ -1,3 +1,4 @@
+
 const productos = [
     {
         producto: "Camiseta",
@@ -91,3 +92,4 @@ const productos = [
     }
     
 ] 
+
