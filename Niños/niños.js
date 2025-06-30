@@ -119,7 +119,7 @@ function renderizarProductos() {
                     </div>
                 </div>
                 
-                <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                <a href="carrito.html" class="btn btn-primary">Agregar al carrito</a>
             </div>
         `;
 
