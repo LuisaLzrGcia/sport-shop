@@ -9,11 +9,16 @@ body {
     background-color: #f8f9fa;
 }
 
+<<<<<<< HEAD
 a {
     text-decoration: none !important;
 }
 
 .fondo-gris-claro {
+=======
+
+.fondo-gris-claro{
+>>>>>>> 37342b8980e368d95da72bc0f7ab13a669240ef0
     background-color: #F7F7F7;
 }
 
@@ -26,6 +31,7 @@ a {
     background-color: #007D48;
     color: white;
 }
+<<<<<<< HEAD
 
 /*------FOOTER-------*/
 
@@ -148,3 +154,5 @@ footer .store-name {
         flex-direction: column;
     }
 }
+=======
+>>>>>>> 37342b8980e368d95da72bc0f7ab13a669240ef0
