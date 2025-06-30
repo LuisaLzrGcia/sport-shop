@@ -20,7 +20,7 @@ if (producto) {
       </div>
       <div class="col-md-6">
         <h2>${producto.producto}</h2>
-        <h4 class="text-success">$${producto.precioOferta.toFixed(2)} <small class="text-muted text-decoration-line-through">$${producto.precio.toFixed(2)}</small></h4>
+        <h4 class="text-success">$${producto.precio.toFixed(2)}</h4>
         <p class="mb-3">${producto.descripcion}</p>
         <p><strong>Tallas disponibles:</strong> ${producto.tallas.join(', ')}</p>
         <button class="btn btn-primary btn-lg">Agregar al carrito</button>
