@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <img src="logo.png" alt="logo" width="100">
+                    <strong class="ms-2">Sport Shop</strong>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
                     <span class="navbar-toggler-icon"></span>
@@ -31,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.getElementById('navbar').innerHTML = navbar;
 });
+
 const mensajes = [
     { texto: "🚚 Envío gratis en compras mayores a $999", enlace: "index.html" },
     { texto: "🔥 Unete para recibir informacion sobre productos exclusivos disponibles solo esta semana", enlace: "iniciarSesion.html" },

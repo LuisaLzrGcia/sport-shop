@@ -22,81 +22,25 @@
         <section class="d-flex w-100 justify-content-center fondo-gris-claro py-3 mb-3">
             <h1>Lo Nuevo</h1>
         </section>
+        <div class="row">
+            <!-- Sección lateral (aside opcional) -->
+            <aside class="col-xl-2"></aside>
 
-        <section>
-            <div class="container">
-                <div class="row g-4">
-                    <!-- Producto 1 -->
-                    <div class="col-md-4">
-                        <div class="card h-100">
-                            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ead80528-2369-428b-95de-6b11c1d6dae3/AIR+JORDAN+4+RM.png" class="card-img-top" alt="Air Jordan 4 RM">
-                            <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Air Jordan 4 RM</h5>
-                            <p class="card-text flex-grow-1">Tenis para hombre, modelo Air Jordan 4 RM</p>
-                            <p class="card-text">
-                                <span class="fs-5">$159</span>
-                                <span class="text-decoration-line-through text-body-secondary">$199</span>
-                            </p>
-                            <button onclick="addCart()" class="btn fondo-negro-medio d-flex align-items-center gap-2 mt-auto">
-                                <span>Añadir al carrito</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708" />
-                                </svg>
-                            </button>
-                            </div>
-                        </div>
+            <!-- Sección principal -->
+            <section class="col-xl-8">
+                <section>
+                    <div class="container">
+                        <div class="row g-4" id="contenedor-productos"></div>
                     </div>
+                </section>
+                
+            </section>
 
-                    <!-- Producto 2 -->
-                    <div class="col-md-4">
-                        <div class="card h-100">
-                            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/40263d2d-4357-4aa2-a331-5f3b28be9636/PHANTOM+6+HIGH+ELITE+FG+LV8.png" class="card-img-top" alt="Nike Phantom 6 High Elite">
-                            <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Nike Phantom 6 High Elite</h5>
-                            <p class="card-text flex-grow-1">¿Te obsesiona la precisión? Potencia tu juego con Gripknit y Cyclone 360.</p>
-                            <p class="card-text">
-                                <span class="fs-5">$6,599</span>
-                            </p>
-                            <button onclick="addCart()" class="btn fondo-negro-medio d-flex align-items-center gap-2 mt-auto">
-                                <span>Añadir al carrito</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708" />
-                                </svg>
-                            </button>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Sección lateral (aside opcional) -->
+            <aside class="col-xl-2"></aside>
+        </div>
 
-                    <!-- Producto 3 -->
-                    <div class="col-md-4">
-                        <div class="card h-100">
-                            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f566f622-874a-4ecd-9bd1-47f52cbe8c53/ZM+SUPERFLY+10+ELITE+FG+LV8.png" class="card-img-top" alt="Nike Mercurial Superfly 10 Elite">
-                            <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Nike Mercurial Superfly 10 Elite</h5>
-                            <p class="card-text flex-grow-1">Tacos Elite con unidad Air Zoom 3/4 para máxima velocidad y propulsión.</p>
-                            <p class="card-text">
-                                <span class="fs-5">$7,299</span>
-                            </p>
-                            <button onclick="addCart()" class="btn fondo-negro-medio d-flex align-items-center gap-2 mt-auto">
-                                <span>Añadir al carrito</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-cart-check-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708" />
-                                </svg>
-                            </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Aquí agregas más productos siguiendo el mismo esquema -->
-                </div>
-            </div>
-        </section>
+        
     </main>
 
 
