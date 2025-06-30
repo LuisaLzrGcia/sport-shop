@@ -5,66 +5,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Navbar -->
     <header>
         <nav>
-               <a href="./Mujer/mujer.html" class="btn btn-outline-primary">
-                    Mujer
-                </a>
-                <a href="./Carrito/carrito.html" class="btn btn-outline-primary">
-                    Carrito
-                </a>
+            Navbar
         </nav>
     </header> 
 
     <!-- Contenido principal -->
     <main class="container-fluid">
+
+        <div class="bg-primary-subtle text-center py-2 mb-3">
+            <a id="mensaje-ticker" class="text-dark text-decoration-none fw-bold"></a>
+        </div> 
+        <hr>
+
         <div class="row">
             <!-- Sección lateral (aside opcional) -->
-            <aside class="col-xl-2">
-                <div class="p-3 bg-light border">Aside / Barra lateral</div>
-            </aside>
+            <aside class="col-xl-2"></aside>
 
             <!-- Sección principal -->
             <section class="col-xl-8">
-                <article class="p-3">
-                    <h2>Título del artículo</h2>
-                    <p>Contenido del artículo principal...</p>
-                </article>
+                <!-- Primer video -->
+                <section>
+                    <div class="ratio ratio-21x9">
+                        <iframe 
+                            src="https://www.youtube.com/embed/xbDozo8IEkI?autoplay=1&mute=1&loop=1&playlist=xbDozo8IEkI&controls=0&modestbranding=1&showinfo=0&rel=0&disablekb=1"
+                            title="Anuncio ropa deportiva"
+                            allow="autoplay"
+                            frameborder="0"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h1 class="text-center fw-bold mt-5">No se trata solo de competir, se trata de superarte cada día.</h1>
+                    <h2 class="text-center fw-light mb-5">Aquí encuentras la ropa que te impulsa a ir más allá de tus límites.</h2>
+                    <img src="https://hojassueltasok.wordpress.com/wp-content/uploads/2017/11/ch011014a-brands-page_000.jpg" alt="Imagen marcas" class="d-block mx-auto img-fluid" style="width: 80%; max-width: 800px; height: auto;">
+                    <h1 class="text-center fw-bold mt-5">Las mejores marcas del mercado,</h1>
+                    <h2 class="text-center fw-light mb-5">al alcance de tu entrenamiento.</h2>
+                </section>
+                <!-- Productos -->
+                <section class="container my-5">
+                    <div class="row text-center">
+                        <!-- Producto 1 -->
+                        <div class="col-md-4 mb-4">
+                            <h3 class="text-primary">Nike Mercurial 10 Elite</h3>
+                            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f566f622-874a-4ecd-9bd1-47f52cbe8c53/ZM+SUPERFLY+10+ELITE+FG+LV8.png" alt="Producto 1" class="img-fluid mb-3 rounded" style="height:300px; object-fit:contain; width:100%;">
+                            <p>¿La velocidad es tu obsesión? También para las mayores estrellas del fútbol. Por eso, creamos estos tacos Elite.</p>
+                            <a href="loNuevo.html"><button class="btn btn-primary">Comprar</button></a>
+                        </div>
+                        <!-- Producto 2 -->
+                        <div class="col-md-4 mb-4">
+                            <h3 class="text-primary">PSG Air Max Plus</h3>
+                            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7b642882-b274-4faf-9ace-e2ffd3133913/NIKE+AIR+MAX+PLUS+PRM.png" alt="Producto 2" class="img-fluid mb-3 rounded" style="height:300px; object-fit:contain; width:100%;">
+                            <p>La malla transpirable te ayuda a mantener la frescura, mientras que la amortiguación visible te permite celebrar a tu equipo con comodidad.</p>
+                            <a href="loNuevo.html"><button class="btn btn-primary">Comprar</button></a>
+                        </div>
+                        <!-- Producto 3 -->
+                        <div class="col-md-4 mb-4">
+                            <h3 class="text-primary">Nike Free Metcon6</h3>
+                            <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/11dd18fc-9ee2-4e3e-85e2-19ff6b51eddf/NIKE+FREE+METCON+6.png" alt="Producto 3" class="img-fluid mb-3 rounded" style="height:300px; object-fit:contain; width:100%;">
+                            <p>Tu entrenamiento tiene un propósito determinado, un enfoque específico...</p>
+                            <a href="loNuevo.html"><button class="btn btn-primary">Comprar</button></a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Segundo video -->
+                <section>
+                    <div class="ratio ratio-21x9">
+                        <iframe 
+                            src="https://www.youtube.com/embed/NljGurzPM2g?autoplay=1&mute=1&loop=1&playlist=NljGurzPM2g&controls=0&modestbranding=1&showinfo=0&rel=0&disablekb=1"
+                            title="Anuncio NIKE deportivo"
+                            allow="autoplay"
+                            frameborder="0"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h1 class="text-center fw-bold mt-5">Todo lo que necesitas para romper tus marcas…</h1>
+                    <h2 class="text-center fw-light mb-5">¡Aquí lo tienes!</h2>
+                    <img src="https://png.pngtree.com/thumb_back/fh260/background/20241013/pngtree-a-black-male-athlete-in-sportswear-running-at-full-speed-with-image_16380344.jpg" alt="Imagen atleta" class="d-block mx-auto img-fluid" style="width: 80%; max-width: 800px; height: auto;">
+                    <h1 class="text-center fw-bold mt-5">Aquí no vendemos ropa...</h1>
+                    <h2 class="text-center fw-light mb-5">Vendemos motivación en forma de outfit.</h2>
+                </section>
+                <!-- Productos 2 -->
+                <section class="container my-5">
+                    <div class="row text-center">
+                        <!-- Columna 1 -->
+                        <div class="col-md-4 mb-4">
+                            <h3 class="text-primary">Playera de México</h3>
+                            <img src="https://unicosmoderna.com/cdn/shop/files/PLAYERA-ADIDAS-IP6379-CABALLERO-MULTICOLOR-206160-_5.jpg?v=1745880866&width=1365" alt="Producto 4" class="img-fluid mb-3 rounded" style="height:300px; object-fit:contain; width:100%;">
+                            <p>Salta a la cancha y luce como todo un profesional usando el Jersey adidas Selección Nacional de México Local 2024.</p>
+                            <a href="loNuevo.html"><button class="btn btn-primary">Comprar</button></a>
+                        </div>
+                        <!-- Columna 2 -->
+                        <div class="col-md-4 mb-4">
+                            <h3 class="text-primary">Polo Tech Po</h3>
+                            <img src="https://underarmour.scene7.com/is/image/Underarmour/PS1370399-100_HF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708" alt="Producto 5" class="img-fluid mb-3 rounded" style="height:300px; object-fit:contain; width:100%;">
+                            <p>Presenta un corte clásico con mangas cortas y cuello polo, se ajustará de manera perfecta a tu cuerpo y te podrás mover con una total libertad...</p>
+                            <a href="loNuevo.html"><button class="btn btn-primary" >Comprar</button></a>
+                        </div>
+                        <!-- Columna 3 -->
+                        <div class="col-md-4 mb-4">
+                            <h3 class="text-primary">Playera Adidas Adizero</h3>
+                            <img src="https://www.innovasport.com/medias/IS-IN1156-1.jpg?context=bWFzdGVyfGltYWdlc3w3ODAzN3xpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnNU15OW9Nell2TVRJek56RTRNakkzTXprME9EWXVhbkJufDdkMzlmYmFiMDZjODAwNGFmYzM4MmEwMTk5MTFjN2UyZTAxNGQ2YzI4ZTY5ODE5YjcwYzNjNmEwMTYxYzI2MjQ" alt="Producto 6" class="img-fluid mb-3 rounded" style="height:300px; object-fit:contain; width:100%;">
+                            <p>Presenta un corte clásico con mangas cortas y cuello redondo, se ajustará de manera perfecta a tu cuerpo.</p>
+                            <a href="loNuevo.html"><button class="btn btn-primary">Comprar</button></a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Imagen -->
+                <section>
+                    <h1 class="text-center fw-bold mt-5">Cada paso cuenta.</h1>
+                    <h2 class="text-center fw-light mb-5">Cada meta empieza con el equipo adecuado.</h2>
 
-                <article class="p-3">
-                    <h2>Otro artículo</h2>
-                    <p>Más contenido para mostrar aquí.</p>
-                </article>
+                    <img src="https://media.istockphoto.com/id/637772330/es/foto/los-amantes-del-gimnasio-se-unen.jpg?s=612x612&w=0&k=20&c=V6HKoQwTb3CRs1iKCncyxAj29uHU6C48fXMT28T-egQ=" alt="Imagen atleta" class="d-block mx-auto img-fluid" style="width: 80%; max-width: 800px; height: auto;">
+
+                    <h1 class="text-center fw-bold mt-5">El éxito no viene solo...</h1>
+                    <h2 class="text-center fw-light mb-5">¡Vístete para ganarlo!</h2>
+                </section>
             </section>
             <div class="card" style="width: 18rem;">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        cards content.</p>
+                        card’s content.</p>
                     <p class="card-text">Precio: </p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
 
             <!-- Sección lateral (aside opcional) -->
-            <aside class="col-xl-2">
-                <div class="p-3 bg-light border">Aside / Barra lateral</div>
-            </aside>
+            <aside class="col-xl-2"></aside>
         </div>
     </main>
+
 
     <!-- Footer -->
     <footer>
         <p class="mb-0 text-center">&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
