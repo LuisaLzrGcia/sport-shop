@@ -1,4 +1,4 @@
-const productos = [
+export const productos = [
     {
         producto: "Air Jordan 4 RM",
         precio: 3499,
