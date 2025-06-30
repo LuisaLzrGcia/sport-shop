@@ -79,6 +79,55 @@ const productos = [
         tallas: ["S", "M", "L", "XL"],
         imagen: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/61cd991b-c65d-4efc-8998-073b7b9cc1aa/CFC+Y+NK+DF+JSY+SS+STAD+HM.png",
         descripcion: "Conjunto de uniforme de futbol para niño."
-    },
+    }
     
-]
+];
+
+function renderizarProductos() {
+    const contenedor = document.getElementById('contenedor-dinamico');
+    contenedor.innerHTML = ''; // Limpiar contenedor antes de renderizar
+
+    productos.forEach(producto => {
+        // Crear elemento de tarjeta
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.style.width = '18rem';
+
+        // Determinar si tiene oferta
+        const tieneOferta = producto.preciooferta > 0 && producto.preciooferta < producto.precio;
+
+        // Construir el HTML de la tarjeta
+        card.innerHTML = `
+            <img src="${producto.imagen}" class="card-img-top" alt="${producto.producto}">
+            <div class="card-body">
+                <h5 class="card-title">${producto.producto}</h5>
+                <p class="card-text">${producto.descripcion}</p>
+                
+                <div class="mb-2">
+                    ${tieneOferta ? `
+                        <span class="precio-original">$${producto.precio.toFixed(2)}</span>
+                        <span class="precio-oferta"> $${producto.preciooferta.toFixed(2)}</span>
+                    ` : `<span class="precio">$${producto.precio.toFixed(2)}</span>`}
+                </div>
+                
+                <div class="mb-3">
+                    <h6>Tallas disponibles:</h6>
+                    <div class="d-flex flex-wrap">
+                        ${producto.tallas.map(talla => 
+                            `<span class="badge bg-secondary tallas-badge">${talla}</span>`
+                        ).join('')}
+                    </div>
+                </div>
+                
+                <a href="#" class="btn btn-primary">Agregar al carrito</a>
+            </div>
+        `;
+
+        // Agregar tarjeta al contenedor
+        contenedor.appendChild(card);
+    });
+}
+
+// Llamar a la función cuando el DOM esté cargado
+document.addEventListener('DOMContentLoaded', renderizarProductos);
+
