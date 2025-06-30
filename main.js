@@ -1,5 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const navbar = `
+document.addEventListener("DOMContentLoaded", () => {
+    createnavbar()
+})
+const createnavbar = () => {
+    let navbarElement = document.querySelector("#navbar");
+    const navbarContent = `
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 mt-3 mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
@@ -30,8 +34,9 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         </nav>
     `;
-    document.getElementById('navbar').innerHTML = navbar;
-});
+    navbarElement.innerHTML = navbarContent;
+}
+
 
 const mensajes = [
     { texto: "🚚 Envío gratis en compras mayores a $999", enlace: "index.html" },
