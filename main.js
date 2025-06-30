@@ -1,3 +1,4 @@
+
 const productos = [
     {
         producto: "Camiseta",
@@ -6,7 +7,7 @@ const productos = [
         categoria: "Mujer" ,
         tallas: ["S", "M", "L", "XL"],
         imagen: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/11be4b02-6c3c-4db1-a1f9-83e5e18e9eac/W+J+SS+GF+GFX+TEE+MVP+J84.png",
-        descripcion: "Camiseta  100% con diseño moderno."
+        descripcion: "Camiseta de algodón 100% con diseño moderno."
     },
        {
         producto: "Camiseta",
@@ -91,3 +92,4 @@ const productos = [
     }
     
 ] 
+
