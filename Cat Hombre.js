@@ -28,7 +28,7 @@ const productos = [
         precio: 120.00,
         precioOferta: 100.00,
         tallas: ["24", "25", "26", "27", "28", "29", "30"],
-        imagen: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0c6f3b2d-4e5a-4b7c-9d1f-2e8f0a3b5c7c/air-max-270-mens-shoes.png",
+        imagen: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/86d674b1-9f36-40bc-90c2-2e817025242c/NIKE+AIR+MAX+PLUS+G.png",
         descripcion: "Las Nike Air Max 270 combinan estilo y comodidad con una gran unidad Air en el talón."
     },
     {
@@ -36,7 +36,7 @@ const productos = [
         precio: 180.00,
         precioOferta: 160.00,
         tallas: ["24", "25", "26", "27", "28", "29", "30"],
-        imagen: "https://assets.adidas.com/images/w_600,f_auto,q_auto,fl_lossy,pg_1/3c8b2f0d4f5e4a6a9d7c/Ultraboost_21_Shoes_Black_GZ5550_01_standard.jpg",
+        imagen: "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/7210d2419d5a448f9526ac7f0116f93f_9366/Tenis_Ultraboost_21_Negro_FZ2762_01_standard.jpg",
         descripcion: "Las Adidas Ultraboost 21 ofrecen una pisada suave y reactiva, perfectas para correr largas distancias."
     },
     {
@@ -44,7 +44,7 @@ const productos = [
         precio: 110.00,
         precioOferta: 95.00,
         tallas: ["24", "25", "26", "27", "28", "29", "30"],
-        imagen: "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/374930/01/mod01/fnd/PNA/fmt/png",
+        imagen: "https://images.puma.net/images/308634/02/fnd/MEX/w/600/h/600/fmt/png/bg/%23FAFAFA",
         descripcion: "Los Puma RS-X son una declaración de estilo con su diseño retro y comodidad excepcional."
     },
     {
@@ -52,7 +52,7 @@ const productos = [
         precio: 25.00,
         precioOferta: 15.00,
         tallas: ["S", "M", "L", "XL"],
-        imagen: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3a3d1d37-1521-4346-9185-23e9c25622af/M+NK+DF+TEE+RLGD+RESET.png",
+        imagen: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/70c5dbb1-4439-401c-82fa-d56def4d0270/M+NK+DF+TEE+RLGD+RESET.png",
         descripcion: "Como actualización de la playera Legend, esta playera absorbente de sudor es suave en todas las formas correctas. También la recortamos con un ajuste más relajado y holgado que las versiones anteriores para que puedas lograr todas tus repeticiones sin perder el ritmo."     
     },
     {
@@ -60,7 +60,7 @@ const productos = [
         precio: 30.00,
         precioOferta: 25.00,
         tallas: ["S", "M", "L", "XL"],
-        imagen: "https://assets.adidas.com/images/w_600,f_auto,q_auto,fl_lossy,pg_1/5c8b2f0d4f5e4a6a9d7c/Essentials_3-Stripes_T-Shirt_Black_GD5946_01_standard.jpg",
+        imagen: "https://m.media-amazon.com/images/I/513N8hob4IL.__AC_SY300_SX300_QL70_ML2_.jpg",
         descripcion: "La camiseta Essentials 3-Stripes de Adidas es un clásico atemporal con un toque moderno."
     },
     {
@@ -68,7 +68,7 @@ const productos = [
         precio: 28.00,
         precioOferta: 22.00,
         tallas: ["S", "M", "L", "XL"],
-        imagen: "https://underarmour.scene7.com/is/image/Underarmour/1326416-001?wid=880&hei=880&fmt=png-alpha",
+        imagen: "https://http2.mlstatic.com/D_NQ_NP_998620-MLM46571897400_062021-O-playera-under-armour-tech-20-manga-corta-para-hombre.webp",
         descripcion: "La camiseta Under Armour Tech 2.0 es perfecta para entrenar, con tecnología que absorbe el sudor y te mantiene fresco."
     },
     {
@@ -76,7 +76,7 @@ const productos = [
         precio: 32.00,
         precioOferta: 28.00,
         tallas: ["S", "M", "L", "XL"],
-        imagen: "https://assets.reebok.com/images/w_600,f_auto,q_auto,fl_lossy,pg_1/3c8b2f0d4f5e4a6a9d7c/Workout_Ready_T-Shirt_Black_GD5946_01_standard.jpg",
+        imagen: "https://m.media-amazon.com/images/I/61Xw+UAR82L._AC_SY606_.jpg",
         descripcion: "La camiseta Workout Ready de Reebok es ideal para tus entrenamientos, con un diseño cómodo y funcional."
     },
     {
