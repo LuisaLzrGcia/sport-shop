@@ -9,7 +9,7 @@ const createFooter = () => {
     <div class="">
         <div class="footer-section logo-container">
             <div class="logo-image-footer">
-                <img src="./assets/logo.jpg" alt="" srcset="">
+                <img src="./assets/logo-footer.jpg" alt="" srcset="">
             </div>
             </ul>
         </div>
@@ -27,7 +27,7 @@ const createFooter = () => {
             <p>General</p>
             <ul class="list-unstyled">
                 <li><a href="#">Sobre nosotros</a></li>
-                <li><a href="#">Contactanos</a></li>
+                <li><a href="contactanos.html">Contactanos</a></li>
                 <li><a href="#">Términos y condiciones</a></li>
                 <li><a href="#">Política de privacidad</a></li>
             </ul>
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="loNuevo.html">Lo Nuevo</a></li>
                         <li class="nav-item"><a class="nav-link" href="hombre.html">Hombre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="mujer.html">Mujer</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./Mujer/mujer.html">Mujer</a></li>
                         <li class="nav-item"><a class="nav-link" href="nino.html">Niño/a</a></li>
                         <li class="nav-item"><a class="nav-link text-danger" href="ofertas.html">Ofertas</a></li>
                     </ul>
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </button>
                     <a href="iniciarSesion.html" class="text-white me-3"><i class="bi bi-person" style="font-size: 1.2rem;"></i></a>
                     <a href="favoritos.html" class="text-danger me-3"><i class="bi bi-heart" style="font-size: 1.2rem;"></i></a>
-                    <a href="carrito.html" class="text-white"><i class="bi bi-bag" style="font-size: 1.2rem;"></i></a>
+                    <a href="./Carrito/carrito.html" class="text-white"><i class="bi bi-bag" style="font-size: 1.2rem;"></i></a>
                 </form>
             </div>
         </nav>
