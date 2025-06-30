@@ -1,7 +1,7 @@
 const productos = [
     {
         producto: "Camiseta",
-        precio: 20.00,
+        precio: 899.00,
         precioOferta: 0.00,
         categoria: "Mujer" ,
         tallas: ["S", "M", "L", "XL"],
@@ -10,7 +10,7 @@ const productos = [
     },
        {
         producto: "Camiseta",
-        precio: 20.00,
+        precio: 759.00,
         precioOferta: 0.00,
         categoria: "Mujer",
         tallas: ["S", "M", "L", "XL"],
@@ -19,7 +19,7 @@ const productos = [
     },
        {
         producto: "Camiseta",
-        precio: 20.00,
+        precio: 1239.00,
         precioOferta: 0.00,
         categoria: "Mujer",
         tallas: ["S", "M", "L", "XL"],
@@ -28,7 +28,7 @@ const productos = [
     },
        {
         producto: "Camiseta",
-        precio: 20.00,
+        precio: 699.00,
         precioOferta: 0.00,
         categoria: "Mujer",
         tallas: ["S", "M", "L", "XL"],
@@ -37,7 +37,7 @@ const productos = [
     },
        {
         producto: "Camiseta",
-        precio: 20.00,
+        precio: 899.00,
         precioOferta: 0.00,
         categoria: "Mujer",
         tallas: ["S", "M", "L", "XL"],
@@ -46,7 +46,7 @@ const productos = [
     },
        {
         producto: "Camiseta",
-        precio: 20.00,
+        precio: 849.00,
         precioOferta: 0.00,
         categoria: "Mujer",
         tallas: ["S", "M", "L", "XL"],
@@ -55,7 +55,7 @@ const productos = [
     },
        {
         producto: "Camiseta",
-        precio: 20.00,
+        precio: 919.00,
         precioOferta: 0.00,
         categoria: "Mujer",
         tallas: ["S", "M", "L", "XL"],
@@ -64,7 +64,7 @@ const productos = [
     },
        {
         producto: "Camiseta",
-        precio: 20.00,
+        precio: 899.00,
         precioOferta: 0.00,
         categoria: "Mujer",
         tallas: ["S", "M", "L", "XL"],
@@ -73,7 +73,7 @@ const productos = [
     },
        {
         producto: "Camiseta",
-        precio: 20.00,
+        precio: 1199.00,
         precioOferta: 0.00,
         categoria: "Mujer",
         tallas: ["S", "M", "L", "XL"],
@@ -82,7 +82,7 @@ const productos = [
     },
        {
         producto: "Camiseta",
-        precio: 20.00,
+        precio: 1049.00,
         precioOferta: 0.00,
         categoria: "Mujer",
         tallas: ["S", "M", "L", "XL"],
