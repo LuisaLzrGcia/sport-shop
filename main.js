@@ -75,8 +75,6 @@ const createFooter = () => {
 }
 
 const addCart = (e) => {
-
-
     const producto = {
         producto: e.dataset.producto,
         categoria: e.dataset.categoria,
@@ -87,9 +85,7 @@ const addCart = (e) => {
         precioOferta: Number(e.dataset.preciooferta),
         descuento: Number(e.dataset.descuento),
     };
-
-    console.log(producto);
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let cart = JSON.parse(localStorage.getItem("carrito")) || [];
     const existingProductIndex = cart.findIndex(item => item.producto === producto.producto);
     if (existingProductIndex !== -1) {
         cart[existingProductIndex].cantidad += 1;
@@ -97,7 +93,7 @@ const addCart = (e) => {
         producto.cantidad = 1;
         cart.push(producto);
     }
-    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem("carrito", JSON.stringify(cart));
 }
 
 function createNavbar() {
