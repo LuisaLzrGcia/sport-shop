@@ -104,34 +104,8 @@
                                         </div>
                                     </div>
                                     <!-- Resumen del pedido -->
-                                    <div class="w-100 py-3">
-                                        <div class="card p-4 bg-white">
-                                            <h4 class="mb-3">Resumen del pedido</h4>
-                                            <ul class="list-group mb-3">
-                                                <li class="list-group-item d-flex justify-content-between lh-sm">
-                                                    <div>
-                                                        <h6 class="my-0">Tenis deportivos</h6>
-                                                        <small class="text-muted">Talla: 27</small>
-                                                    </div>
-                                                    <span class="text-muted">$1,299.00</span>
-                                                </li>
-                                                <li class="list-group-item d-flex justify-content-between lh-sm">
-                                                    <div>
-                                                        <h6 class="my-0">Mochila deportiva</h6>
-                                                        <small class="text-muted">Color: negro</small>
-                                                    </div>
-                                                    <span class="text-muted">$749.00</span>
-                                                </li>
-                                                <li class="list-group-item d-flex justify-content-between">
-                                                    <strong>Total (MXN)</strong>
-                                                    <strong>$2,048.00</strong>
-                                                </li>
-                                            </ul>
-                                            <p class="text-muted small text-center mb-0">Los precios incluyen IVA. Envío
-                                                gratis en
-                                                pedidos mayores a $999.</p>
-                                        </div>
-                                    </div>
+                                    <div id="resumen-pedido" class="w-100 py-3"></div>
+
 
                                     <button onclick="finalizarCompra()" id="btnFinalizar" class="btn btn-success w-100"
                                         type="button">Finalizar
@@ -156,6 +130,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 

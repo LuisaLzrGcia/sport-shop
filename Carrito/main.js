@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById('carrito-productos');
+    const carrito = JSON.parse(localStorage.getItem("carrito")) || []
+    console.log(carrito);
 
     if (carrito.length === 0) {
         container.innerHTML = '<p class="text-center">No hay productos en el carrito.</p>';
@@ -10,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     carrito.forEach((producto, index) => {
         const col = document.createElement('div');
-        col.classList.add('col-md-6', 'col-lg-4');
+        col.classList.add('col-md-6', 'col-lg-3');
 
         const subtotal = producto.precio * producto.cantidad;
         total += subtotal;
@@ -54,14 +56,20 @@ document.addEventListener("DOMContentLoaded", () => {
             carritoPlano = carritoPlano.filter(p => p.producto !== productoAEliminar.producto);
 
             localStorage.setItem('carrito', JSON.stringify(carritoPlano));
-            location.reload();
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Eliminado del carrito!",
+                showConfirmButton: false,
+                timer: 1000
+            }).then(() => {
+                location.reload(); // recarga al terminar el swal
+            });
         }
     });
 
     // Finalizar compra
     document.getElementById('finalizar-compra').addEventListener('click', () => {
-        alert("¡Gracias por tu compra!");
-        localStorage.removeItem('carrito');
-        location.reload();
+        window.location.href="finalizar-compra.html"
     });
 });
