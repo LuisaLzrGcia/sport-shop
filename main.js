@@ -109,6 +109,15 @@ const addCart = (e) => {
         cart.push(producto);
     }
     localStorage.setItem("carrito", JSON.stringify(cart));
+
+    Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Añadido al carrito!",
+        text: `"${producto.producto}" se ha añadido al carrito.`,
+        showConfirmButton: false,
+        timer: 1000
+    });
 }
 
 function seleccionarTalla(element) {
@@ -119,12 +128,15 @@ function seleccionarTalla(element) {
 }
 
 function createNavbar() {
+    const vistaGuardada = localStorage.getItem('vistaActual');
+    const links = document.querySelectorAll('#navLinks .nav-link');
+
     const navbar = `
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="./assets/logo.png" alt="logo" width="100">
-                    <strong class="ms-2">Sport Shop</strong>
+                <a onclick="guardarVistaActual('')" class="navbar-brand" href="index.html">
+                <img src="./assets/logo.png" alt="logo" width="100">
+                <strong class="ms-2">Sport Shop</strong>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarMenu">
@@ -133,25 +145,54 @@ function createNavbar() {
                 <div class="collapse navbar-collapse  justify-content-between" id="navbarMenu">
                     <div class="d-flex justify-content-lg-center justify-content-start w-100">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="lo-nuevo.html">Lo Nuevo</a></li>
-                            <li class="nav-item"><a class="nav-link" href="hombres.html">Hombre</a></li>
-                            <li class="nav-item"><a class="nav-link" href="mujer.html">Mujer</a></li>
-                            <li class="nav-item"><a class="nav-link" href="niños.html">Niño/a</a></li>
-                            <li class="nav-item"><a class="nav-link text-danger" href="ofertas.html">Ofertas</a>
+                            <li class="nav-item">
+                                <a 
+                                class="nav-link ${localStorage.getItem('vistaActual') === 'lo-nuevo.html' ? 'active' : ''}" 
+                                href="lo-nuevo.html" 
+                                onclick="guardarVistaActual('lo-nuevo.html')"
+                                >Lo Nuevo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a 
+                                class="nav-link ${localStorage.getItem('vistaActual') === 'hombres.html' ? 'active' : ''}" 
+                                href="hombres.html" 
+                                onclick="guardarVistaActual('hombres.html')"
+                                >Hombre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a 
+                                class="nav-link ${localStorage.getItem('vistaActual') === 'mujer.html' ? 'active' : ''}" 
+                                href="mujer.html" 
+                                onclick="guardarVistaActual('mujer.html')"
+                                >Mujer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a 
+                                class="nav-link ${localStorage.getItem('vistaActual') === 'niños.html' ? 'active' : ''}" 
+                                href="niños.html" 
+                                onclick="guardarVistaActual('niños.html')"
+                                >Niño/a</a>
+                            </li>
+                            <li class="nav-item">
+                                <a 
+                                class="nav-link text-danger ${localStorage.getItem('vistaActual') === 'ofertas.html' ? 'active' : ''}" 
+                                href="ofertas.html" 
+                                onclick="guardarVistaActual('ofertas.html')"
+                                >Ofertas</a>
                             </li>
                         </ul>
                     </div>
                     <form class="d-flex align-items-center">
                         <input class="form-control form-control-sm me-2 d-none d-lg-block" type="search"
                             placeholder="Buscar">
-                        <button class="btn btn-light btn-sm me-3 d-none d-lg-block" type="submit">
+                        <button  onclick="guardarVistaActual('')" class="btn btn-light btn-sm me-3 d-none d-lg-block" type="submit">
                             <i class="bi bi-search"></i>
                         </button>
-                        <a href="login.html" class="text-white me-3"><i class="bi bi-person"
+                        <a  onclick="guardarVistaActual('')" href="login.html" class="text-white me-3"><i class="bi bi-person"
                                 style="font-size: 1.2rem;"></i></a>
-                        <a href="favoritos.html" class="text-danger me-3"><i class="bi bi-heart"
+                        <a type="button" onclick="mostrarProximaFuncion(); return false;" class="text-danger me-3"><i class="bi bi-heart"
                                 style="font-size: 1.2rem;"></i></a>
-                        <a href="./Carrito/carrito.html" class="text-white"><i class="bi bi-bag"
+                        <a  onclick="guardarVistaActual('')" href="carrito.html" class="text-white"><i class="bi bi-bag"
                                 style="font-size: 1.2rem;"></i></a>
                     </form>
                 </div>
@@ -181,3 +222,19 @@ mostrarMensaje();
 // Cambia cada 5 segundos
 setInterval(mostrarMensaje, 5000);
 
+function guardarVistaActual(vista) {
+    if (vista.length > 0) {
+        localStorage.setItem('vistaActual', vista);
+    } else {
+        localStorage.removeItem('vistaActual'); // Elimina si no se pasa nada
+    }
+}
+
+function mostrarProximaFuncion() {
+    Swal.fire({
+        icon: 'info',
+        title: '¡Muy pronto!',
+        text: 'La función de favoritos estará disponible próximamente.',
+        confirmButtonText: 'OK',
+    });
+}

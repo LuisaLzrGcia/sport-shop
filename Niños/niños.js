@@ -170,7 +170,6 @@ function renderizarProductos() {
             </div>
         </div>
         `})
-    console.log(card);
 
     contenedorNino.innerHTML = card
 
