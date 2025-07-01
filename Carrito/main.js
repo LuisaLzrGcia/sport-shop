@@ -74,4 +74,5 @@ document.addEventListener("DOMContentLoaded", () => {
             window.location.href = "finalizar-compra.html";
         }
     });
+
 });

@@ -87,44 +87,4 @@ const productos = [
         imagen: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/06f55d66-c1fd-4bb3-a416-f31564ad7bd8/M+NK+DF+TOTALITY+KNIT+7IN+UL.png",
         descripcion: "Diseñados para el entrenamiento, nuestros shorts Totality absorbentes de sudor te permiten mantener la simplicidad y la frescura."
     },
-    {
-        producto: "Adidas 4KRFT",
-        precio: 45.00,
-        precioOferta: 40.00,
-        tallas: ["S", "M", "L", "XL"],
-        imagen: "https://assets.adidas.com/images/w_600,f_auto,q_auto,fl_lossy,pg_1/3c8b2f0d4f5e4a6a9d7c/4KRFT_Short_Black_GD5946_01_standard.jpg",
-        descripcion: "Los shorts Adidas 4KRFT son perfectos para entrenar con comodidad y estilo."
-    },
-    {
-        producto: "Puma Active Training",
-        precio: 50.00,
-        precioOferta: 45.00,
-        tallas: ["S", "M", "L", "XL"],
-        imagen: "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/374930/01/mod01/fnd/PNA/fmt/png",
-        descripcion: "Los shorts Puma Active Training son ideales para tus sesiones de entrenamiento, con un diseño cómodo y funcional."
-    },
-    {
-        producto: "Under Armour Launch SW 7",
-        precio: 55.00,
-        precioOferta: 50.00,
-        tallas: ["S", "M", "L", "XL"],
-        imagen: "https://underarmour.scene7.com/is/image/Underarmour/1326416-001?wid=880&hei=880&fmt=png-alpha",
-        descripcion: "Los shorts Under Armour Launch SW 7 son perfectos para correr, con un diseño ligero y transpirable."
-    },
-    {
-        producto: "Reebok Speedwick",
-        precio: 48.00,
-        precioOferta: 42.00,
-        tallas: ["S", "M", "L", "XL"],
-        imagen: "https://assets.reebok.com/images/w_600,f_auto,q_auto,fl_lossy,pg_1/3c8b2f0d4f5e4a6a9d7c/Speedwick_Short_Black_GD5946_01_standard.jpg",
-        descripcion: "Los shorts Reebok Speedwick son ideales para entrenar con comodidad y estilo."
-    },
-    {
-        producto: "Adidas Ultraboost 22",
-        precio: 200.00,
-        precioOferta: 180.00,
-        tallas: ["24", "25", "26", "27", "28", "29", "30"],
-        imagen: "https://assets.adidas.com/images/w_600,f_auto,q_auto,fl_lossy,pg_1/3c8b2f0d4f5e4a6a9d7c/Ultraboost_22_Shoes_Black_GZ5550_01_standard.jpg",
-        descripcion: "Las Adidas Ultraboost 22 ofrecen una pisada suave y reactiva, perfectas para correr largas distancias."
-    }
 ]

@@ -116,7 +116,7 @@ const addCart = (e) => {
         title: "Añadido al carrito!",
         text: `"${producto.producto}" se ha añadido al carrito.`,
         showConfirmButton: false,
-        timer: 1000
+        timer: 1500
     });
 }
 
