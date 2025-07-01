@@ -27,6 +27,28 @@ productos.map((producto) => {
             <p class="card-text">
                 <span class="fs-5">${precioFormateado}</span>
             </p>
+            <div class="mb-3">
+                    <h6>Tallas disponibles:</h6>
+                    <div class="d-flex flex-wrap">
+                        ${producto.tallas.map(talla =>
+                `<span class="badge bg-secondary tallas-badge m-1">${talla}</span>`
+            ).join('')}
+                    </div>
+                </div>
+            <button 
+                onclick="verDetalles(this)"
+                class="btn btn-outline-secondary mb-2"
+                data-producto="${producto.producto}"
+                data-categoria="${"Lo más nuevo"}"
+                data-descripcion="${producto.descripcion.replace(/"/g, '&quot;')}"
+                data-tallas='${JSON.stringify(producto.tallas)}'
+                data-imagen="${producto.imagen}"
+                data-precio="${producto.precio}"
+                data-preciooferta="${producto.precioOferta}"
+                data-descuento="${producto.descuento || 0}"
+            >
+                Ver detalles
+            </button>
             <button 
                 onclick="addCart(this)", 
                 class="btn fondo-negro-medio d-flex align-items-center gap-2 add-to-cart"
