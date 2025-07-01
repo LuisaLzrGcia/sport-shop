@@ -105,7 +105,7 @@ function createNavbar() {
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 mt-3 mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="logo.png" alt="logo" width="100">
+                    <img src="./assets/logo.png" alt="logo" width="100">
                     <strong class="ms-2">Sport Shop</strong>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
