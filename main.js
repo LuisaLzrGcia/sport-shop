@@ -20,7 +20,7 @@ const createFooter = () => {
                 <li><a href="lo-nuevo.html">Lo mas nuevo</a></li>
                 <li><a href="mujer.html">Mujer</a></li>
                 <li><a href="hombres.html">Hombre</a></li>
-                <li><a href="niño.html">Niño/a</a></li>
+                <li><a href="Niño.html">Niño/a</a></li>
                 <li><a href="ofertas.html">Ofertas</a></li>
             </ul>
         </div>
