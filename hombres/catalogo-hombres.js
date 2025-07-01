@@ -3,11 +3,11 @@ const contenedor = document.getElementById('catalogo-hombres');
 productos.map((producto) => {
     contenedor.innerHTML += `
         <div class="card" style="width: 18rem;">
-        <img src="${producto.imagen}"
-            class="card-img-top" alt="...">
+        <img src="${producto.imagen}" class="card-img-top" alt="${producto.producto}">
         <div class="card-body">
             <h5 class="card-title">${producto.producto}</h5>
             <p class="card-text">${producto.descripcion}</p>
+            <p class="card-text">$${producto.precio.toFixed(2)}</p>
             <div class="mb-3">
                 <h6>Tallas disponibles:</h6>
                 <div class="d-flex flex-wrap">
