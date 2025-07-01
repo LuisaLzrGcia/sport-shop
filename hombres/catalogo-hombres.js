@@ -1,13 +1,19 @@
 const contenedor = document.getElementById('catalogo-hombres');
 
 productos.map((producto) => {
+    const precioFormateado = producto.precio.toLocaleString('es-MX', {
+        style: 'currency',
+        currency: 'MXN'
+    });
     contenedor.innerHTML += `
         <div class="card m-2" style="width: 18rem;">
         <img src="${producto.imagen}" class="card-img-top" alt="${producto.producto}">
         <div class="card-body">
             <h5 class="card-title">${producto.producto}</h5>
             <p class="card-text">${producto.descripcion}</p>
-            <p class="card-text">$${producto.precio.toFixed(2)}</p>
+            <p class="card-text">
+                <span class="fs-5">${precioFormateado}</span>
+            </p>
             <div class="mb-3">
                 <h6>Tallas disponibles:</h6>
                 <div class="d-flex flex-wrap">
