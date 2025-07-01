@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const col = document.createElement('div');
         col.classList.add('col-md-6', 'col-lg-4');
 
-        const productoJSON = JSON.stringify(producto).replace(/"/g, '&quot;'); // Escapamos comillas
+        const productoJSON = JSON.stringify(producto).replace(/"/g, '&quot;'); 
 
         col.innerHTML = `
             <div class="card h-100">
