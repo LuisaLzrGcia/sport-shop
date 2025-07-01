@@ -168,9 +168,9 @@ function createNavbar() {
                             </li>
                             <li class="nav-item">
                                 <a 
-                                class="nav-link ${localStorage.getItem('vistaActual') === 'Niños.html' ? 'active' : ''}" 
-                                href="Niños.html" 
-                                onclick="guardarVistaActual('Niños.html')"
+                                class="nav-link ${localStorage.getItem('vistaActual') === 'niños.html' ? 'active' : ''}" 
+                                href="niños.html" 
+                                onclick="guardarVistaActual('niños.html')"
                                 >Niño/a</a>
                             </li>
                             <li class="nav-item">
