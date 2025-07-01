@@ -1,31 +1,55 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Inicializar tooltips (opcional)
-  const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-  tooltipTriggerList.map(function(tooltipTriggerEl) {
-    return new bootstrap.Tooltip(tooltipTriggerEl);
-  });
-
-  // Validación del formulario
   const loginForm = document.getElementById('loginForm');
+  
   if (loginForm) {
     loginForm.addEventListener('submit', function(e) {
       e.preventDefault();
       
-      const username = document.getElementById('username').value;
-      const password = document.getElementById('password').value;
+      // Obtener valores de los campos
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value.trim();
       
-      // Validación simple
-      if (username.trim() === '' || password.trim() === '') {
-        alert('Por favor complete todos los campos');
+      // Validar campos vacíos
+      if (!username || !password) {
+        showAlert('Por favor complete todos los campos', 'danger');
         return;
       }
       
-      // Aquí iría la lógica de autenticación real
-      console.log('Login attempt with:', { username, password });
-      alert('Login submitted! (This is a demo)');
-      
-      // Redirección o lógica posterior al login
-      // window.location.href = 'dashboard.html';
+      // Validar credenciales
+      if (username === 'administrator' && password === 'administrator') {
+        // Credenciales correctas - redirigir después de 1 segundo
+        showAlert('Inicio de sesión exitoso! Redirigiendo...', 'success');
+        setTimeout(() => {
+          window.location.href = 'index.html';
+        }, 1000);
+      } else {
+        // Credenciales incorrectas
+        showAlert('Usuario o contraseña incorrectos', 'danger');
+        document.getElementById('password').value = '';
+      }
     });
+  }
+  
+  // Función para mostrar alertas estilizadas
+  function showAlert(message, type) {
+    // Eliminar alertas previas
+    const existingAlert = document.querySelector('.login-alert');
+    if (existingAlert) {
+      existingAlert.remove();
+    }
+    
+    // Crear alerta
+    const alertDiv = document.createElement('div');
+    alertDiv.className = `alert alert-${type} login-alert mt-3`;
+    alertDiv.textContent = message;
+    
+    // Insertar después del botón de login
+    const loginButton = document.querySelector('#loginForm button[type="submit"]');
+    loginButton.parentNode.insertBefore(alertDiv, loginButton.nextSibling);
+    
+    // Eliminar automáticamente después de 3 segundos
+    setTimeout(() => {
+      alertDiv.remove();
+    }, 3000);
   }
 });
