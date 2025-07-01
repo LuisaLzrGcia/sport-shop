@@ -121,6 +121,15 @@ footer .store-name {
     color: #777;
 }
 
+@media (max-width: 992px) {
+
+    .navbar-nav{
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+}
+
 @media (max-width: 768px) {
     footer>div {
         flex-direction: column;
