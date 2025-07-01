@@ -70,6 +70,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Finalizar compra
     document.getElementById('finalizar-compra').addEventListener('click', () => {
-        window.location.href="finalizar-compra.html"
+        alert("¡Gracias por tu compra!");
+        localStorage.removeItem('carrito');
+        window.location.href = 'finalizar-compra.html';
     });
+
 });

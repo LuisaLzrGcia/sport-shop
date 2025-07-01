@@ -1,49 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Carrito de compras</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
 
-    <!-- Navbar -->
+<!-- Navbar -->
     <header>
         <nav>
             <div id="navbar"></div>
         </nav>
     </header>
-    <main class="container-fluid">
-        <section class="d-flex w-100 justify-content-center fondo-gris-claro">
-            <h1>
-                Carrito
-            </h1>
-        </section>
-        <section>
-            <div class="row py-3 d-flex justify-content-center">
-                <div class="col-xl-10 d-flex flex-wrap justify-content-center gap-3" id="carrito-productos">
 
-                </div>
-            </div>
-        </section>
-    </main>
+<main class="container my-4">
+    <section id="carrito-productos" class="row gy-4">
+        <!-- Productos del carrito se mostrarán aquí -->
+    </section>
+</main>
 
-    <!-- Footer -->
+<!-- Footer -->
     <footer></footer>
 
-    <script src="./Carrito/carrito.js"></script>
-    <script src="./Carrito/main.js"></script>
-    <script src="main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./Carrito/main.js"></script>
+<script src="./Carrito/carrito.js"></script>
+<script src="./main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
-
 </html>
