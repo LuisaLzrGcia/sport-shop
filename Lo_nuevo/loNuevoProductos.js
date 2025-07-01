@@ -1,4 +1,4 @@
-const productos = [
+export const productos = [
     {
         producto: "Nike Phantom 6 High Elite",
         precio: 6599.00,

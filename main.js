@@ -101,7 +101,7 @@ function createNavbar() {
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 mt-3 mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="logo.png" alt="logo" width="100">
+                    <img src="./assets/logo.png" alt="logo" width="100">
                     <strong class="ms-2">Sport Shop</strong>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -114,7 +114,7 @@ function createNavbar() {
                             <li class="nav-item"><a class="nav-link" href="loNuevo.html">Lo Nuevo</a></li>
                             <li class="nav-item"><a class="nav-link" href="hombre.html">Hombre</a></li>
                             <li class="nav-item"><a class="nav-link" href="./Mujer/mujer.html">Mujer</a></li>
-                            <li class="nav-item"><a class="nav-link" href="nino.html">Niño/a</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Niños.html">Niño/a</a></li>
                             <li class="nav-item"><a class="nav-link text-danger" href="ofertas.html">Ofertas</a>
                             </li>
                         </ul>
@@ -125,7 +125,7 @@ function createNavbar() {
                         <button class="btn btn-light btn-sm me-3 d-none d-lg-block" type="submit">
                             <i class="bi bi-search"></i>
                         </button>
-                        <a href="iniciarSesion.html" class="text-white me-3"><i class="bi bi-person"
+                        <a href="login.html" class="text-white me-3"><i class="bi bi-person"
                                 style="font-size: 1.2rem;"></i></a>
                         <a href="favoritos.html" class="text-danger me-3"><i class="bi bi-heart"
                                 style="font-size: 1.2rem;"></i></a>
