@@ -1,4 +1,4 @@
-const contenedor = document.getElementById('catalogo hombres');
+const contenedor = document.getElementById('catalogo-hombres');
 
 productos.forEach((producto, i) => {
     contenedor.innerHTML += `
@@ -9,7 +9,7 @@ productos.forEach((producto, i) => {
                     <h5 class="card-title">${producto.producto}</h5>
                     <p class="card-text">${producto.descripcion}</p>
                     <p class="card-text fw-bold">Precio: $${producto.precio.toFixed(2)}</p>
-                    <a href="Detalles del Producto/Detalles del producto.html?id=${i}" class="btn btn-outline-primary">Ver detalles</a>
+                    <a href="Detalles-del-producto/detalles-del-producto.html?id=${i}" class="btn btn-outline-primary">Ver detalles</a>
                     <a href="#" class="btn btn-primary mt-auto">Comprar Ahora</a>
                 </div>
             </div>
