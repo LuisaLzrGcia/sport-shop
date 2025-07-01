@@ -2,7 +2,7 @@ const contenedor = document.getElementById('catalogo-hombres');
 
 productos.map((producto) => {
     contenedor.innerHTML += `
-        <div class="card" style="width: 18rem;">
+        <div class="card m-2" style="width: 18rem;">
         <img src="${producto.imagen}" class="card-img-top" alt="${producto.producto}">
         <div class="card-body">
             <h5 class="card-title">${producto.producto}</h5>
