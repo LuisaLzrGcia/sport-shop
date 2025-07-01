@@ -1,39 +1,13 @@
-import { productos } from './ofertasProductos.js';
-let ofertas = document.getElementById("ofertas-container");
-let card = ``
+const contenedor = document.getElementById('catalogo-hombres');
 
 productos.map((producto) => {
-    const nombre = producto.producto.replace(/'/g, "\\'");
-    const categoria = producto.categoria.replace(/'/g, "\\'");
-    const descripcion = producto.descripcion.replace(/'/g, "\\'");
-    const tallas = JSON.stringify(producto.tallas).replace(/'/g, "\\'");
-    const imagen = producto.imagen;
-    const precio = producto.precio;
-    const precioOferta = producto.precioOferta;
-    const descuento = producto.descuento;
-
-    const precioFormateado = precio.toLocaleString('es-MX', {
-        style: 'currency',
-        currency: 'MXN'
-    });
-
-    const precioOfertaFormateado = precioOferta.toLocaleString('es-MX', {
-        style: 'currency',
-        currency: 'MXN'
-    });
-
-    card += `
-    <div class="card" style="width: 18rem;">
+    contenedor.innerHTML += `
+        <div class="card" style="width: 18rem;">
         <img src="${producto.imagen}"
             class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">${producto.producto}</h5>
             <p class="card-text">${producto.descripcion}</p>
-            <span class=" badge fondo-verde-oscuro">${producto.descuento}% de descuento</span>
-            <p class="card-text">
-                <span class="fs-5">${precioOfertaFormateado}</span>
-                <span class="text-decoration-line-through text-body-secondary">${precioFormateado}</span>
-            </p>
             <div class="mb-3">
                 <h6>Tallas disponibles:</h6>
                 <div class="d-flex flex-wrap">
@@ -46,7 +20,7 @@ productos.map((producto) => {
                 onclick="verDetalles(this)"
                 class="btn btn-outline-secondary mb-2"
                 data-producto="${producto.producto}"
-                data-categoria="${"Ofertas"}"
+                data-categoria="${"Hombres"}"
                 data-descripcion="${producto.descripcion.replace(/"/g, '&quot;')}"
                 data-tallas='${JSON.stringify(producto.tallas)}'
                 data-imagen="${producto.imagen}"
@@ -60,7 +34,7 @@ productos.map((producto) => {
                 onclick="addCart(this)", 
                 class="btn fondo-negro-medio d-flex align-items-center gap-2 add-to-cart"
                 data-producto="${producto.producto}"
-                data-categoria="${"Ofertas"}"
+                data-categoria="${producto.categoria}"
                 data-descripcion="${producto.descripcion.replace(/"/g, '&quot;')}"
                 data-tallas='${JSON.stringify(producto.tallas)}'
                 data-imagen="${producto.imagen}"
@@ -77,6 +51,5 @@ productos.map((producto) => {
             </button>
         </div>
     </div>
-    `})
-
-ofertas.innerHTML = card
+    `;
+});
