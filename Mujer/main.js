@@ -27,7 +27,7 @@ function createCard() {
         });
 
         card += `
-            <div class="card m-2" style="width: 18rem;">
+            <div class="card" style="width: 18rem;">
                 <img src="${imagen}" class="card-img-top" alt="${nombre}">
                 <div class="card-body">
                     <h5 class="card-title">${nombre}</h5>
