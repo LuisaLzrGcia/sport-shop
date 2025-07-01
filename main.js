@@ -17,11 +17,11 @@ const createFooter = () => {
         <div class="footer-section">
             <p class="p-0">Categorias</p>
             <ul class="">
-                <li><a href="#">Lo mas nuevo</a></li>
-                <li><a href="#">Mujer</a></li>
-                <li><a href="#">Hombre</a></li>
-                <li><a href="#">Niño/a</a></li>
-                <li><a href="#">Ofertas</a></li>
+                <li><a href="lo-nuevo.html">Lo mas nuevo</a></li>
+                <li><a href="mujer.html">Mujer</a></li>
+                <li><a href="hombres.html">Hombre</a></li>
+                <li><a href="niño.html">Niño/a</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
             </ul>
         </div>
         <div class="footer-section">
@@ -73,6 +73,21 @@ const createFooter = () => {
 
     footerElement.innerHTML = footerContent;
 }
+const verDetalles = (e) => {
+    console.log(e.dataset);
+    const producto = {
+        producto: e.dataset.producto,
+        descripcion: e.dataset.descripcion,
+        categoria: e.dataset.categoria,
+        tallas: JSON.parse(e.dataset.tallas),
+        imagen: e.dataset.imagen,
+        precio: Number(e.dataset.precio),
+        precioOferta: Number(e.dataset.preciooferta),
+        descuento: Number(e.dataset.descuento),
+    };
+    localStorage.setItem("productoSeleccionado", JSON.stringify(producto));
+    window.location.href = "detalles-del-producto.html";
+}
 
 const addCart = (e) => {
     const producto = {
@@ -96,9 +111,16 @@ const addCart = (e) => {
     localStorage.setItem("carrito", JSON.stringify(cart));
 }
 
+function seleccionarTalla(element) {
+    const todas = document.querySelectorAll('.talla-option');
+    todas.forEach(t => t.classList.remove('bg-primary', 'text-white'));
+
+    element.classList.add('bg-dark', 'text-white');
+}
+
 function createNavbar() {
     const navbar = `
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 mt-3 mb-3">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <img src="./assets/logo.png" alt="logo" width="100">
@@ -111,10 +133,10 @@ function createNavbar() {
                 <div class="collapse navbar-collapse  justify-content-between" id="navbarMenu">
                     <div class="d-flex justify-content-lg-center justify-content-start w-100">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="loNuevo.html">Lo Nuevo</a></li>
-                            <li class="nav-item"><a class="nav-link" href="hombre.html">Hombre</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./Mujer/mujer.html">Mujer</a></li>
-                            <li class="nav-item"><a class="nav-link" href="Niños.html">Niño/a</a></li>
+                            <li class="nav-item"><a class="nav-link" href="lo-nuevo.html">Lo Nuevo</a></li>
+                            <li class="nav-item"><a class="nav-link" href="hombres.html">Hombre</a></li>
+                            <li class="nav-item"><a class="nav-link" href="mujer.html">Mujer</a></li>
+                            <li class="nav-item"><a class="nav-link" href="niños.html">Niño/a</a></li>
                             <li class="nav-item"><a class="nav-link text-danger" href="ofertas.html">Ofertas</a>
                             </li>
                         </ul>
@@ -141,7 +163,7 @@ function createNavbar() {
 
 const mensajes = [
     { texto: "🚚 Envío gratis en compras mayores a $999", enlace: "index.html" },
-    { texto: "🔥 Unete para recibir informacion sobre productos exclusivos disponibles solo esta semana", enlace: "iniciarSesion.html" },
+    { texto: "🔥 Unete para recibir informacion sobre productos exclusivos disponibles solo esta semana", enlace: "login.html" },
     { texto: "🎁 Ofertas exclusivas de todos los productos", enlace: "ofertas.html" },
 ];
 
@@ -158,5 +180,4 @@ function mostrarMensaje() {
 mostrarMensaje();
 // Cambia cada 5 segundos
 setInterval(mostrarMensaje, 5000);
-
 
