@@ -92,7 +92,7 @@ const productos = [
         precio: 45.00,
         precioOferta: 40.00,
         tallas: ["S", "M", "L", "XL"],
-        imagen: "https://assets.adidas.com/images/w_600,f_auto,q_auto,fl_lossy,pg_1/3c8b2f0d4f5e4a6a9d7c/4KRFT_Short_Black_GD5946_01_standard.jpg",
+        imagen: "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/cbbc2e5ab6b94ff68d30adcf014455c3_9366/Shorts_4KRFT_Verde_HE6795_01_laydown.jpg",
         descripcion: "Los shorts Adidas 4KRFT son perfectos para entrenar con comodidad y estilo."
     },
     {
@@ -100,7 +100,7 @@ const productos = [
         precio: 50.00,
         precioOferta: 45.00,
         tallas: ["S", "M", "L", "XL"],
-        imagen: "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/374930/01/mod01/fnd/PNA/fmt/png",
+        imagen: "https://http2.mlstatic.com/D_NQ_NP_919110-MLM83943035773_042025-O-conjunto-deportivo-puma-casual-train-favorite-hombre-525968.webp",
         descripcion: "Los shorts Puma Active Training son ideales para tus sesiones de entrenamiento, con un diseño cómodo y funcional."
     },
     {
@@ -108,7 +108,7 @@ const productos = [
         precio: 55.00,
         precioOferta: 50.00,
         tallas: ["S", "M", "L", "XL"],
-        imagen: "https://underarmour.scene7.com/is/image/Underarmour/1326416-001?wid=880&hei=880&fmt=png-alpha",
+        imagen: "https://m.media-amazon.com/images/I/51xYpBs5AOL.__AC_SX300_SY300_QL70_ML2_.jpg",
         descripcion: "Los shorts Under Armour Launch SW 7 son perfectos para correr, con un diseño ligero y transpirable."
     },
     {
@@ -116,7 +116,7 @@ const productos = [
         precio: 48.00,
         precioOferta: 42.00,
         tallas: ["S", "M", "L", "XL"],
-        imagen: "https://assets.reebok.com/images/w_600,f_auto,q_auto,fl_lossy,pg_1/3c8b2f0d4f5e4a6a9d7c/Speedwick_Short_Black_GD5946_01_standard.jpg",
+        imagen: "https://dpjye2wk9gi5z.cloudfront.net/wcsstore/ExtendedSitesCatalogAssetStore/images/catalog/zoom/3019648-0307V1.jpg",
         descripcion: "Los shorts Reebok Speedwick son ideales para entrenar con comodidad y estilo."
     },
     {
