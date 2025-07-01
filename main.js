@@ -117,7 +117,7 @@ function createNavbar() {
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="loNuevo.html">Lo Nuevo</a></li>
                             <li class="nav-item"><a class="nav-link" href="hombre.html">Hombre</a></li>
-                            <li class="nav-item"><a class="nav-link" href="./Mujer/mujer.html">Mujer</a></li>
+                            <li class="nav-item"><a class="nav-link" href="mujer.html">Mujer</a></li>
                             <li class="nav-item"><a class="nav-link" href="nino.html">Niño/a</a></li>
                             <li class="nav-item"><a class="nav-link text-danger" href="ofertas.html">Ofertas</a>
                             </li>
@@ -133,7 +133,7 @@ function createNavbar() {
                                 style="font-size: 1.2rem;"></i></a>
                         <a href="favoritos.html" class="text-danger me-3"><i class="bi bi-heart"
                                 style="font-size: 1.2rem;"></i></a>
-                        <a href="./Carrito/carrito.html" class="text-white"><i class="bi bi-bag"
+                        <a href="carrito.html" class="text-white"><i class="bi bi-bag"
                                 style="font-size: 1.2rem;"></i></a>
                     </form>
                 </div>

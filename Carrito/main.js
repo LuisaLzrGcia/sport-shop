@@ -62,6 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('finalizar-compra').addEventListener('click', () => {
         alert("¡Gracias por tu compra!");
         localStorage.removeItem('carrito');
-        location.reload();
+        window.location.href = 'finalizar-compra.html';
     });
+
 });
