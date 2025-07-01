@@ -20,7 +20,7 @@ const createFooter = () => {
                 <li><a href="lo-nuevo.html">Lo mas nuevo</a></li>
                 <li><a href="mujer.html">Mujer</a></li>
                 <li><a href="hombres.html">Hombre</a></li>
-                <li><a href="niño.html">Niño/a</a></li>
+                <li><a href="Niño.html">Niño/a</a></li>
                 <li><a href="ofertas.html">Ofertas</a></li>
             </ul>
         </div>
@@ -168,9 +168,9 @@ function createNavbar() {
                             </li>
                             <li class="nav-item">
                                 <a 
-                                class="nav-link ${localStorage.getItem('vistaActual') === 'niños.html' ? 'active' : ''}" 
-                                href="niños.html" 
-                                onclick="guardarVistaActual('niños.html')"
+                                class="nav-link ${localStorage.getItem('vistaActual') === 'Niños.html' ? 'active' : ''}" 
+                                href="Niños.html" 
+                                onclick="guardarVistaActual('Niños.html')"
                                 >Niño/a</a>
                             </li>
                             <li class="nav-item">
